@@ -62,3 +62,23 @@ function myPromise() {
 }
 
 
+
+
+
+
+
+
+
+// only practice purpose
+
+
+// var promise = new Promise(function(res, rej) {
+//     if (a===b) {
+//         res("User is authentic");
+//     }
+//     else {
+//         rej("Not authenticate");
+//     }
+// });
+
+// var newPromise = promise().then(res=> console.log("true")).catch(err=>console.log(err));
