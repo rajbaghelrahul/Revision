@@ -78,20 +78,29 @@
 
 
 
+
+
+
+
+
+
+
+
 // This is perfect all are perfect but this is best of them.
 const myFunction = () => {
     let myValue = 0;
     console.log(myValue);
 
-    const childFunction = () => {
+    return childFunction = () => { // either this or line 89 for return using..
         console.log(myValue += 2);
     }
-    return childFunction;
+    // return childFunction;
 }
 
-
-const result = myFunction();
-console.log(result);
+// here we execute the outer function and store the return function in result.
+// and use by calling result after exection outer function as well.
+const result = myFunction(); 
+console.log(result); // check what thing are store in result.
 result();
 result();
 result();
