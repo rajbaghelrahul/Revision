@@ -3,17 +3,30 @@ function Hello() {
     console.log("Hello World!");
 }
 
+// function debounce(fn, d) {
+//     let timer ;
+//     return function(...args) {
+//         if(timer) {
+//             clearTimeout(timer);
+//         }
+//         timer = setTimeout(() => {
+//             fn();
+//         }, d);
+//     }
+// }
+
+
 function debounce(fn, d) {
-    let timer ;
+    let timer;
     return function(...args) {
-        if(timer) {
-            clearTimeout(timer);
-        }
+        if(timer) clearTimeout(timer);
         timer = setTimeout(() => {
             fn();
-        }, d);
+        },d);
     }
 }
+
+
 
 // debounce(Hello, 2000);
 const BetterFunction = debounce(Hello, 2000);
