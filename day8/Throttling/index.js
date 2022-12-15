@@ -10,7 +10,7 @@ function Hello(fn, d) {
             fn();
         },d);
     }
-}
+};
 
 const funto = Hello(getName, 3000);
 // funto();
