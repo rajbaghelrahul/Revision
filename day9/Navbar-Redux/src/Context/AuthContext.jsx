@@ -15,10 +15,10 @@ function AuthContextProvider({ children }) {
   const handleLogout = () => {};
 
   return (
-    <AuthContext.Provider value={{ isAuth, handleLogin }}>
+    <AuthContext.Provider value={{ isAuth, handleLogin, handleLogout }}>
       {children}
     </AuthContext.Provider>
   );
-}
+};
 
 export default AuthContextProvider;

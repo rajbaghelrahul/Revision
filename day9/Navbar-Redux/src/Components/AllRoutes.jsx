@@ -20,9 +20,9 @@ function AllRoutes() {
         }
       ></Route>
       {/* 
-    path - on which path you want to show
-    element - what do you want to show
-  */}
+        path - on which path you want to show
+        element - what do you want to show
+      */}
       <Route
         path="/about"
         element={
