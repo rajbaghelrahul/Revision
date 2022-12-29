@@ -3,7 +3,7 @@ import { increase, decrease } from "./redux/action";
 import { useSelector, useDispatch } from "react-redux";
 
 function App() {
-  // useSelector gives access to current global state
+  // useSelector gives access the data to current global state
   const count = useSelector((state) => state.count);
   // useDispatch gives access to store's dispatch function
   const dispatch = useDispatch();
