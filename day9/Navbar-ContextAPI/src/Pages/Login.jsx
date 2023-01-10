@@ -12,7 +12,7 @@ function Login() {
   return (
     <>
       <input type="email" placeholder="email" />
-      <input type="email" placeholder="password" />
+      <input type="password" placeholder="password" />
       <button onClick={handleLogin}>LOGIN</button>
     </>
   );
