@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.headingMens {
+    /* border: 3px solid black; */
+    width: 100%;
+    font-weight: bolder;
+    padding: 20px;
+    font-size: xx-large;
+    background-color: black;
+    color: white;
+    position: fixed;
+    top: 0;
+}
+#mainContainer {
+    /* border: 2px solid red; */
+    width: 90%;
+    margin: auto;
+    margin-top: 80px;
+    /* padding: 20px; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+#mainContainer > div {
+    /* border: 2px solid green; */
+    margin: auto;
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#mainContainer > div > img {
+    /* border: 2px solid black; */
+    width: 90%;
+    margin: auto;
+    margin-left: 4%;
+}
+#mainContainer > div > h2 {
+    /* border: 2px solid black; */
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+#mainContainer > div > div > h3 {
+    /* border: 2px solid black; */
+    width: 90%;
+    margin: auto;
+    /* margin-bottom: 20px; */
+    color: green;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+#mainContainer > div > div > h5 {
+    /* border: 2px solid black; */
+    color: red;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+    text-decoration: line-through;
+    font-size: xx-large;
+    font-weight: bold;
+}
+#mainContainer > div > button {
+    width: 90%;
+    margin: auto;
+    margin-left: 4%;
+    margin-bottom: 20px;
+    padding: 5px 50px;
+    font-size: large;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+}
+#mainContainer > div > button:hover {
+    background-color: lavender;
+    color: black;
+}
+
+
+/* Responsive */
+
+/* @media screen and (min-width: 769px) and (max-width: 1024px) {
+    
+}    */
+
+
+@media screen and (min-width: 427px) and (max-width: 768px) {
+    #mainContainer {
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+        gap: 1px;
+    }
+}   
+@media screen and (min-width: 321px) and (max-width: 426px) {
+    #mainContainer {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        gap: 1px;
+    }
+}   
+@media screen and (min-width: 0px) and (max-width: 321px) {
+    #mainContainer {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+}   
