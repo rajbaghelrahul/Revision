@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "express": "^4.18.2",
+    "http": "^0.0.1-security",
+    "nodemon": "^2.0.20"
+  },
+  "name": "http",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "nodemon": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "https://github.com/rajbaghelrahul/",
+  "license": "ISC",
+  "type": "module",
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
