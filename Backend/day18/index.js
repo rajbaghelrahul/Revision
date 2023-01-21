@@ -1,14 +1,73 @@
-import http from 'http';
+import express from 'express';
+import fs from 'fs';
 
-function handler(req, res) {
-    console.log("Hello world!");
+const app = express();
 
-    res.write("Hey, this is a response for you");
-    res.end();
+function fib(n) {
+    let number = [0, 1];
+    for(var i=2; i<=n; i++) {
+        let num = number[i-2] + number[i-1];
+        number.push(num);
+    }
+    return String(number[n]);
 }
 
-const server = http.createServer(handler);
+fs.readFile('README.md', 'utf-8', function(err, data) {
+    console.log(data);
+    // res.send(data);
+});
 
-server.listen(3000);
+app.get('/', (req, res) => {
+    res.send("Hello, world! This is home.");
+    req.send(data);
+})
+
+app.get('/fib/:number', (req, res) => {
+    const num = req.params.number;
+    // console.log(num);
+    res.send(fib(Number(num)));
+    // res.send(fib(num));
+    // res.send(data);
+})
+
+
+app.listen(3000);
 
 console.log("listening on http://localhost:3000");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import http from 'http';
+
+// function handler(req, res) {
+//     console.log("Hello world!");
+
+//     res.write("Hey, this is a response for you");
+//     res.end();
+// }
+
+// const server = http.createServer(handler);
+
+// server.listen(3000);
+
+// console.log("listening on http://localhost:3000");
