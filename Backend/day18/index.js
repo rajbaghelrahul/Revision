@@ -4,12 +4,12 @@ import fs from 'fs';
 const app = express();
 
 function fib(n) {
-    let number = [0, 1];
+    let numbers = [0, 1];
     for(var i=2; i<=n; i++) {
-        let num = number[i-2] + number[i-1];
-        number.push(num);
+        let num = numbers[i-2] + numbers[i-1];
+        numbers.push(num);
     }
-    return String(number[n]);
+    return String(numbers[n]);
 }
 
 fs.readFile('README.md', 'utf-8', function(err, data) {
@@ -19,7 +19,7 @@ fs.readFile('README.md', 'utf-8', function(err, data) {
 
 app.get('/', (req, res) => {
     res.send("Hello, world! This is home.");
-    req.send(data);
+    // req.send(data);
 })
 
 app.get('/fib/:number', (req, res) => {
