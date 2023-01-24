@@ -7,9 +7,10 @@ import fs from 'fs';
 //     "department": "technology"
 // }]
 
-export function readEmploy() {
-    const allEmployees = fs.readFileSync('./emplyees.json',{
-        encoding: "utf-8"
+
+function readEmploy() {
+    const allEmployees = fs.readFileSync('./employees.json',{
+        encoding: 'utf-8'
     });
     return JSON.parse(allEmployees);
 }

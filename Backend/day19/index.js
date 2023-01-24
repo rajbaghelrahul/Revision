@@ -11,6 +11,7 @@ app.get('/', (req, res) => {
 app.get('/employee/:id', (req, res) => {
 
     try {
+
         let {id} = req.params;
     
         if(isNaN(parseInt(id))) {
@@ -26,13 +27,13 @@ app.get('/employee/:id', (req, res) => {
             if(employee) {
                 return res.status(200).send({
                     status: "success",
-                    data: "Not found"
+                    data: id
                 })
             }
             else {
                 return res.status(404).send({
                     status: "error",
-                    error: "Not found"
+                    error: "Not found in try"
                 })
             }
         }
@@ -41,7 +42,7 @@ app.get('/employee/:id', (req, res) => {
     catch {
         return res.status(500).send({
             status: "error",
-            error: "Not found"
+            error: "Not found in catch"
         })
     }
 })
