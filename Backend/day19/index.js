@@ -1,7 +1,8 @@
 import express from "express";
-import { getAllEmployee, getEmployee } from "./employees.js";
+import { getAllEmployee, getEmployee, addEmployee } from "./employees.js";
 
 const app = express();
+app.use(express.json());
 
 app.get("/", (req, res) => {
   res.send("Hello, world! This is a test on home");
@@ -59,6 +60,52 @@ app.get("/employee/:id", (req, res) => {
     });
   }
 });
+
+app.post("/employee", (req, res) => {
+
+  try {
+    const data = req.body;
+  
+    if (data.name && data.designation && data.department) {
+      const employee = addEmployee(data);
+      return res.status(200).send({
+        status: "success",
+        data: employee,
+      });
+    }
+    else {
+      return res.status(404).send({
+        status: "error",
+        error: "Invalid request",
+      });
+    }    
+  } catch {
+    
+    return res.status(500).send({
+      status: "error",
+      error: "Invalid request",
+    });
+  }
+})
+// app.post('/employee', (req, res) => {
+
+//   const data = req.body;
+//   // Joi
+//   if (data.name && data.designation && data.department) {
+
+//       const employee = addEmployee(data);
+//       return res.status(200).send({
+//           staus: 'success',
+//           data: employee
+//       })
+
+//   } else {
+//       return res.status(400).send({
+//           status: 'error',
+//           error: 'Incomplete data'
+//       })
+//   }
+// })
 
 app.listen(3000);
 

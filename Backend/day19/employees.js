@@ -13,6 +13,39 @@ const employees = [{
     "department": "technology2"
 }]
 
+function writeAllEmployees(employees) {
+    const data = JSON.stringify(employees, null, 2);
+
+    fs.writeFileSync('./employees.json', data, {
+        encoding: 'utf-8'
+    })
+}
+
+export function addEmployee(data) {
+
+    const employees = readEmploy();
+    let maxAvailableId = 0;
+    
+    for (const employee of employees) {
+        if(maxAvailableId < employee.employeeId) {
+            maxAvailableId = employee.employeeId;
+        }
+    }
+    let {
+        name,
+        designation,
+        department
+    } = data;
+
+    let employee = {
+        name, designation, department, employeeId: maxAvailableId+1
+    };
+
+    employees.push(employee);
+    writeAllEmployees(employees);
+    return employee;
+}
+
 
 function readEmploy() {
     const allEmployees = fs.readFileSync('./employees.json',{
