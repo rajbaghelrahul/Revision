@@ -4,5 +4,29 @@
     "designation": "Lawyer",
     "department": "legal",
     "employeeId": 2
+  },
+  {
+    "name": "Tanmay Sharma2",
+    "designation": "Lawyer2",
+    "department": "legal2",
+    "employeeId": 3
+  },
+  {
+    "name": "Tanmay Sharma2",
+    "designation": "Lawyer2",
+    "department": "legal2",
+    "employeeId": 4
+  },
+  {
+    "name": "Tanmay Sharma2",
+    "designation": "Lawyer2",
+    "department": "legal2",
+    "employeeId": 5
+  },
+  {
+    "name": "Tanmay Sharma2",
+    "designation": "Lawyer2",
+    "department": "legal2",
+    "employeeId": 6
   }
 ]

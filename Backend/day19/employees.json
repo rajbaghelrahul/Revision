@@ -1,16 +1,38 @@
-{
-  "employees": [
-    {
-      "name": "Raj Baghel",
-      "designation": "Software Developer",
-      "employeeId": 1,
-      "department": "technology"
-    },
-    {
-      "name": "Rahul Baghel",
-      "designation": "Software Developer2",
-      "employeeId": 2,
-      "department": "technology2"
-    }
-  ]
-}
+[
+  {
+    "name": "Raj Baghel",
+    "designation": "Software Developer",
+    "employeeId": 1,
+    "department": "technology"
+  },
+  {
+    "name": "Rahul Baghel",
+    "designation": "Software Developer2",
+    "employeeId": 2,
+    "department": "technology2"
+  },
+  {
+    "name": "RahulRaj Baghel",
+    "designation": "Software Developer3",
+    "department": "technology3",
+    "employeeId": 3
+  },
+  {
+    "name": "Rahul Raj Baghel",
+    "designation": "Software Developer4",
+    "department": "technology4",
+    "employeeId": 4
+  },
+  {
+    "name": "Rahul Raj Baghel",
+    "designation": "Software Developer4",
+    "department": "technology4",
+    "employeeId": 5
+  },
+  {
+    "name": "Rahul Raj Baghel",
+    "designation": "Software Developer4",
+    "department": "technology4",
+    "employeeId": 6
+  }
+]

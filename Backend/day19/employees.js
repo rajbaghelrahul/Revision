@@ -42,7 +42,7 @@ export function addEmployee(data) {
     };
 
     employees.push(employee);
-    writeAllEmployees(employees);
+    writeAllEmployees(employees); 
     return employee;
 }
 
