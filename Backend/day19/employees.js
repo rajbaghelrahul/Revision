@@ -21,6 +21,7 @@ function writeAllEmployees(employees) {
     })
 }
 
+
 export function addEmployee(data) {
 
     const employees = readEmploy();
