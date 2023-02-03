@@ -6,13 +6,14 @@ const FirstName = createContext();
 const LastName = createContext();
 
 const App = () => {
+  
   return (
     <>
-      <FirstName.Provider value={"Raj"}>
-      <LastName.Provider value={"Baghel"}>
+      {/* <FirstName.Provider value={"Raj"}> */}
+      {/* <LastName.Provider value={"Baghel"}> */}
         <CompA />
-      </LastName.Provider>
-      </FirstName.Provider>
+      {/* </LastName.Provider> */}
+      {/* </FirstName.Provider> */}
     </>
   );
 };
