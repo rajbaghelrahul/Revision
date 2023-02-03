@@ -5,14 +5,16 @@ import { FirstName } from "..";
 
 
 const CompC = () => {
+  // we can use any of them below line no 9 10...
   const {firstName, lastName} = useContext(FirstName);
-  // const value2 = useContext(LastName);
+  const value2 = useContext(FirstName);
   return (
     <>
 
 
     <div>
         <h1>Hello {firstName} {lastName}.</h1>
+        <h1>Hello again {value2.firstName} {value2.lastName}.</h1>
     </div>
 
 
