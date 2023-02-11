@@ -237,6 +237,19 @@
 // console.log(result); // 20
 
 
+// 3rd
+
+// function outer() {
+//   const x = 5;
+//   if (Math.random() > 0.5) {
+//     const y = 6;
+//     return () => console.log(x, y);
+//   }
+// }
+
+// outer()(); // Logs 5 6
+
+
 
 
 
