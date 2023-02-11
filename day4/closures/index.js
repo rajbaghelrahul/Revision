@@ -67,42 +67,44 @@
 // z()
 
 
-// function sum(a) {
-//     // console.log(a);
-//     var c=20;
-//     return function(b) {
-//         return a+b+c;
-//     }
-// }
-
-// var store = sum(300);
-// console.log(store(5));
-
-
-
-
-
-
-
-
-
-
-
-// This is perfect, I mean all are perfect but this is the best of them.
-const myFunction = () => {
-    let myValue = 0;
-    console.log(myValue, "--> line 1");
-
-    return childFunction = () => { // either this or line 89 for return using..
-        console.log(myValue += 2, "--> line 2");
+function sum(a) {
+    // console.log(a);
+    var c=20;
+    return function(b) {
+        return a+b+c;
     }
-    // return childFunction;
 }
 
-// here we execute the outer function and store the return value of function in result variable.
-// and use by calling result variable after exection outer function as well.
-const result = myFunction(); 
-console.log(result); // check what thing are store in result for best experience use browser.
-result();
-result();
-result();
+var store = sum(300);
+console.log(store(5)); // return function(b) are stored in store variable after execution
+// if we try to call the store variable arguments then it will execute the function(b) with 'b' args.
+// and return the value of it.
+
+
+
+
+
+
+
+
+
+
+
+// // This is perfect, I mean all are perfect but this is the best of them.
+// const myFunction = () => {
+//     let myValue = 0;
+//     console.log(myValue, "--> line 1");
+
+//     return childFunction = () => { // either this or line 89 for return using..
+//         console.log(myValue += 2, "--> line 2");
+//     }
+//     // return childFunction;
+// }
+
+// // here we execute the outer function and store the return value of function in result variable.
+// // and use by calling result variable after exection outer function as well.
+// const result = myFunction(); 
+// console.log(result); // check what thing are store in result for best experience use browser.
+// result();
+// result();
+// result();
