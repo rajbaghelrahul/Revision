@@ -5,7 +5,7 @@
 //     function a() {
 //         console.log(num);
 //     }
-//     // num = 20;
+//     num = 20;
 //     // a();
 //     return a;
 // }
@@ -15,16 +15,17 @@
 
 
 
-// function makeFunc() {
-//     const name = 'Mozilla';
-//     function displayName() {
-//       console.log(name);
-//     }
-//     return displayName;
-//   }
+function makeFunc() {
+    const name = 'Mozilla';
+    function displayName() {
+      console.log(name);
+    }
+    name = "Raj Baghel"
+    return displayName;
+  }
   
-//   const myFunc = makeFunc();
-//   myFunc();
+  const myFunc = makeFunc();
+  myFunc();
   
 
 
@@ -86,21 +87,21 @@
 
 
 
-// This is perfect all are perfect but this is best of them.
-const myFunction = () => {
-    let myValue = 0;
-    console.log(myValue);
+// // This is perfect all are perfect but this is best of them.
+// const myFunction = () => {
+//     let myValue = 0;
+//     console.log(myValue);
 
-    return childFunction = () => { // either this or line 89 for return using..
-        console.log(myValue += 2);
-    }
-    // return childFunction;
-}
+//     return childFunction = () => { // either this or line 89 for return using..
+//         console.log(myValue += 2);
+//     }
+//     // return childFunction;
+// }
 
-// here we execute the outer function and store the return function in result.
-// and use by calling result after exection outer function as well.
-const result = myFunction(); 
-console.log(result); // check what thing are store in result.
-result();
-result();
-result();
+// // here we execute the outer function and store the return function in result.
+// // and use by calling result after exection outer function as well.
+// const result = myFunction(); 
+// console.log(result); // check what thing are store in result.
+// result();
+// result();
+// result();
