@@ -67,18 +67,18 @@
 // z()
 
 
-function sum(a) {
-    // console.log(a);
-    var c=20;
-    return function(b) {
-        return a+b+c;
-    }
-}
+// function sum(a) {
+//     // console.log(a);
+//     var c=20;
+//     return function(b) {
+//         return a+b+c;
+//     }
+// }
 
-var store = sum(300);
-console.log(store(5)); // return function(b) are stored in store variable after execution
-// if we try to call the store variable arguments then it will execute the function(b) with 'b' args.
-// and return the value of it.
+// var store = sum(300);
+// console.log(store(5)); // return function(b) are stored in store variable after execution
+// // if we try to call the store variable arguments then it will execute the function(b) with 'b' args.
+// // and return the value of it.
 
 
 
