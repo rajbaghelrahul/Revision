@@ -194,14 +194,34 @@
 
 
 // Closure scope chain --> MDN docs
+// 1st
+
+// // global scope
+// const e = 10;
+// function sum(a) {
+//   return function (b) {
+//     return function (c) {
+//       // outer functions scope
+//       return function (d) {
+//         // local scope
+//         return a + b + c + d + e;
+//       };
+//     };
+//   };
+// }
+
+// console.log(sum(1)(2)(3)(4)); // 20
+
+
+// 2nd
 
 // global scope
 const e = 10;
 function sum(a) {
-  return function (b) {
-    return function (c) {
+  return function sum2(b) {
+    return function sum3(c) {
       // outer functions scope
-      return function (d) {
+      return function sum4(d) {
         // local scope
         return a + b + c + d + e;
       };
@@ -209,7 +229,13 @@ function sum(a) {
   };
 }
 
-console.log(sum(1)(2)(3)(4)); // 20
+const sum2 = sum(1);
+console.log(sum2); // for beter understand check on browser
+const sum3 = sum2(2);
+const sum4 = sum3(3);
+const result = sum4(4);
+console.log(result); // 20
+
 
 
 
