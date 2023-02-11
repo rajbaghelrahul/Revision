@@ -15,17 +15,17 @@
 
 
 
-function makeFunc() {
-    const name = 'Mozilla';
-    function displayName() {
-      console.log(name);
-    }
-    name = "Raj Baghel"
-    return displayName;
-  }
+// function makeFunc() {
+//     const name = 'Mozilla';
+//     function displayName() {
+//       console.log(name);
+//     }
+//     name = "Raj Baghel"
+//     return displayName;
+//   }
   
-  const myFunc = makeFunc();
-  myFunc();
+//   const myFunc = makeFunc();
+//   myFunc();
   
 
 
@@ -34,11 +34,12 @@ function makeFunc() {
 //     return function (y) {
 //       return x + y;
 //     };
-//   }
+//   };
   
+//   // console.log(makeAdder(5));
+//   // console.log(makeAdder(10));
 //   const add5 = makeAdder(5);
 //   const add10 = makeAdder(10);
-  
 //   console.log(add5(2)); // 7
 //   console.log(add10(2)); // 12
   
@@ -87,21 +88,21 @@ function makeFunc() {
 
 
 
-// // This is perfect all are perfect but this is best of them.
-// const myFunction = () => {
-//     let myValue = 0;
-//     console.log(myValue);
+// This is perfect, I mean all are perfect but this is the best of them.
+const myFunction = () => {
+    let myValue = 0;
+    console.log(myValue, "--> line 1");
 
-//     return childFunction = () => { // either this or line 89 for return using..
-//         console.log(myValue += 2);
-//     }
-//     // return childFunction;
-// }
+    return childFunction = () => { // either this or line 89 for return using..
+        console.log(myValue += 2, "--> line 2");
+    }
+    // return childFunction;
+}
 
-// // here we execute the outer function and store the return function in result.
-// // and use by calling result after exection outer function as well.
-// const result = myFunction(); 
-// console.log(result); // check what thing are store in result.
-// result();
-// result();
-// result();
+// here we execute the outer function and store the return function in result.
+// and use by calling result after exection outer function as well.
+const result = myFunction(); 
+console.log(result); // check what thing are store in result for best experience use browser.
+result();
+result();
+result();
