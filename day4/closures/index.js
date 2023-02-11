@@ -99,8 +99,8 @@ const myFunction = () => {
     // return childFunction;
 }
 
-// here we execute the outer function and store the return function in result.
-// and use by calling result after exection outer function as well.
+// here we execute the outer function and store the return value of function in result variable.
+// and use by calling result variable after exection outer function as well.
 const result = myFunction(); 
 console.log(result); // check what thing are store in result for best experience use browser.
 result();
