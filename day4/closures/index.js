@@ -108,3 +108,127 @@
 // result();
 // result();
 // result();
+
+
+
+
+
+
+
+// // Emulating private methods with closures --> MDN docs
+
+// const counter = (function () {
+//   let privateCounter = 0;
+//   function changeBy(val) {
+//     privateCounter += val;
+//   }
+
+//   return {
+//     increment() {
+//       changeBy(1);
+//     },
+
+//     decrement() {
+//       changeBy(-1);
+//     },
+
+//     value() {
+//       return privateCounter;
+//     },
+//   };
+// })();
+
+// console.log(counter.value()); // 0.
+
+// counter.increment();
+// counter.increment();
+// console.log(counter.value()); // 2.
+
+// counter.decrement();
+// console.log(counter.value()); // 1.
+
+
+
+
+
+
+// 2nd
+// const makeCounter = function () {
+//   let privateCounter = 0;
+//   function changeBy(val) {
+//     privateCounter += val;
+//   }
+//   return {
+//     increment() {
+//       changeBy(1);
+//     },
+
+//     decrement() {
+//       changeBy(-1);
+//     },
+
+//     value() {
+//       return privateCounter;
+//     },
+//   };
+// };
+
+// const counter1 = makeCounter();
+// const counter2 = makeCounter();
+
+// console.log(counter1.value()); // 0.
+
+// counter1.increment();
+// counter1.increment();
+// console.log(counter1.value()); // 2.
+
+// counter1.decrement();
+// console.log(counter1.value()); // 1.
+// console.log(counter2.value()); // 0.
+
+
+
+
+
+
+
+
+// Closure scope chain --> MDN docs
+
+// global scope
+const e = 10;
+function sum(a) {
+  return function (b) {
+    return function (c) {
+      // outer functions scope
+      return function (d) {
+        // local scope
+        return a + b + c + d + e;
+      };
+    };
+  };
+}
+
+console.log(sum(1)(2)(3)(4)); // 20
+
+
+
+
+
+
+
+
+// function Hello1() {
+//   console.log("d");
+//   return function Hello2() {
+//     console.log("c");
+//     return function Hello3() {
+//       console.log("b");
+//       return function Hello4() {
+//         console.log("a");
+//       }
+//     }
+//   }
+// }
+
+// Hello1()()()(); // for checking flow of function execution.
