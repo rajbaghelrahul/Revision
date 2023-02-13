@@ -194,6 +194,26 @@
 
 
 // Closure scope chain --> MDN docs
+
+// Example
+// Flow of a function execution
+
+// function Hello1() {
+//   console.log("d");
+//   return function Hello2() {
+//     console.log("c");
+//     return function Hello3() {
+//       console.log("b");
+//       return function Hello4() {
+//         console.log("a");
+//       }
+//     }
+//   }
+// }
+
+// Hello1()()()(); // for checking flow of function execution.
+
+
 // 1st
 
 // // global scope
@@ -256,19 +276,3 @@
 
 
 
-// Flow of a function execution
-
-// function Hello1() {
-//   console.log("d");
-//   return function Hello2() {
-//     console.log("c");
-//     return function Hello3() {
-//       console.log("b");
-//       return function Hello4() {
-//         console.log("a");
-//       }
-//     }
-//   }
-// }
-
-// Hello1()()()(); // for checking flow of function execution.
