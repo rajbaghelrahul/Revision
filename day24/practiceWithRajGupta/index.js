@@ -47,9 +47,13 @@
 
 
 
-var arr = new Array(5);
+var arr = new Array(5); // upto index 4
 // arr[4] = 34;
+arr.push(74); // this will be added in last created 5 index
 console.log(arr[4], arr.length);
+for(var i=0; i<arr.length; i++) {
+    console.log(arr[i], i);
+}
 
 
 
