@@ -47,6 +47,10 @@
 
 
 
+var arr = new Array(5);
+// arr[4] = 34;
+console.log(arr[4], arr.length);
+
 
 
 
