@@ -9,3 +9,18 @@ console.log("Hello world!"); // console, Buffer, fs, HTTP etc. is a "core module
 //     return item%2;
 // })
 // console.log(result);
+
+
+
+// const fs = require('fs').writeFileSync;
+// fs("abc.txt", "Hello World!");
+
+//OR
+
+// const fs = require('fs');
+// fs.writeFileSync("abcd.txt", "Hello World!");
+
+
+
+
+
