@@ -1,6 +1,5 @@
-console.log("Hello world!");
-
-
+console.log("Hello world!"); // console, Buffer, fs, HTTP etc. is a "core module because" we have not create its already created.
+// and console is Global also because of we don't need to import it but fs is a non-global because of we need to import it.
 
 // const num = 4%2;
 // console.log(num)
