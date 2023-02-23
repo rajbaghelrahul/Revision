@@ -9,6 +9,7 @@ import Search from "@mui/icons-material/Search";
 // import { USER_SERVER } from "../Config";
 export const CuratorCreateques = () => {
   const [quesType, setQuesType] = useState("multiple");
+  const [value, setValue] = useState("");
   const [opt_arr, setOptArr] = useState([
    { opt:"Option A",key:1},
    { opt:"Option b",key:2},
@@ -144,8 +145,8 @@ export const CuratorCreateques = () => {
                   return (
                     <div key={key} className="option">
                         
-                      <input placeholder={opt} onChange={()=>{
-                        
+                      <input placeholder={opt} value={value} onChange={(e)=>{
+                        console.log(e.target.value);
                       }} className="option-inp"/>
                       <div className="opt-btn">
                         <div>
