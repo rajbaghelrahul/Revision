@@ -22,19 +22,3 @@
 //OR
 // const abcd = require('fs'); // we don't need set 'import name measn --> "abcd"' same as file 'fs'.
 // abcd.writeFileSync("abcd.txt", "Hello World!");
-
-
-
-
-
-const fs = require('fs');
-
-const input = process.argv;
-
-if(input[2] == 'add') {
-    fs.writeFile(input[3], input[4]);
-}else if(input[2] == 'remove') {
-    fs.unlink(input[3]);
-}else {
-    console.log("Invalid Input");
-}
