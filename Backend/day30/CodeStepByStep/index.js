@@ -19,6 +19,9 @@ console.log("Hello world!"); // console, Buffer, fs, HTTP etc. is a "core module
 
 // const fs = require('fs');
 // fs.writeFileSync("abcd.txt", "Hello World!");
+//OR
+// const abcd = require('fs'); // we don't need set 'import name measn --> "abcd"' same as file 'fs'.
+// abcd.writeFileSync("abcd.txt", "Hello World!");
 
 
 
