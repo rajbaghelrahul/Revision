@@ -51,7 +51,7 @@ const connectDB = require('./mongnoDB');
 
 
 
-
+//// This is Promise method.
 // connectDB().then((response) => { // this is separate function because ol geting and posting method from database connection.
 //     response.find().toArray().then((data) => {
 //         console.log(data);
@@ -61,6 +61,7 @@ const connectDB = require('./mongnoDB');
 
 //OR
 
+// This is async method.
 const getData = async () => {
     let data = await connectDB();
     let response = await data.find().toArray();
