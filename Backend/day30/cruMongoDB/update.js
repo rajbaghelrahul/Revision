@@ -15,8 +15,10 @@ const updateData = async () => {
 //         $set: { name: 'Raj1again Baghel' , age: 22 } // this is for update many things in single object
 //     });
     console.log(result);
-    if(result.acknowledged) {
+    if(result.modifiedCount > 0) { // check in terminal with the help of console "result" just upper line.
         console.log("Data Updated");
+    }else {
+        console.log("Data is not Updated");
     }
 // console.log("Hello World!");
 };
