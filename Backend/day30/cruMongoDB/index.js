@@ -1,16 +1,16 @@
 const connectDB = require('./mongnoDB');
 
-connectDB().then((data) => {
-    data.find().toArray().then((data) => {
-        console.log(data);
+connectDB().then((db) => {
+    db.find().toArray().then((result) => {
+        console.log(result);
     })
 });
 console.log(connectDB());
 
 
 // const getData = async () => {
-//     let data = await connectDB();
-//     let response = await data.find().toArray();
-//     console.log(response);
+//     let db = await connectDB();
+//     let result = await db.find().toArray();
+//     console.log(result);
 // }
 // getData();
