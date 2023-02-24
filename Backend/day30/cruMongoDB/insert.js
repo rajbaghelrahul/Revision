@@ -2,12 +2,12 @@ const connectDB = require('./mongnoDB');
 
 const addData = async () => {
     let db = await connectDB();
-    // let result = await db.insertOne({   // this is for single data insertion.
+    // let result = await db.insertOne({   // this is for single data insertion here we only use "inserone".
     //     name: "Uma Baghel",
     //     age: 21,
     //     Occupation: "Graphic Designer"
     // });
-    let result = await db.insertMany([{ // this is for multiple data insertion her we can use "insertMany" or "insert".
+    let result = await db.insertMany([{ // this is for multiple data insertion here we can use "insertMany" or "insert".
         name: "Raj1 Baghel",
         age: 21,
         Occupation: "Web Developer"
