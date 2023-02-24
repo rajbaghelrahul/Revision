@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "nodemon": "nodemon insert.js"
+    "nodemon": "nodemon update.js"
   },
   "keywords": [],
   "author": "",
