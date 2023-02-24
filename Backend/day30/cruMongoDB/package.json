@@ -1,0 +1,16 @@
+{
+  "name": "createbasicapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "nodemon": "nodemon insert.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mongodb": "^5.1.0",
+    "nodemon": "^2.0.20"
+  }
+}
