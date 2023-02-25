@@ -1,6 +1,6 @@
 const connectDB = require('./mongnoDB');
 const express = require('express');
-const mongodb = require('mongodb');
+const mongodb = require('mongodb'); // It is import and install for delete request in mongoDB.
 
 const app = express();
 
