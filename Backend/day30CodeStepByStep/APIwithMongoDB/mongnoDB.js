@@ -2,7 +2,7 @@ const {MongoClient} = require('mongodb');
 
 const connectDB = async () => {
     let result = await MongoClient.connect('mongodb://localhost:27017');
-    let db = result.db('revisioin');
+    let db = await result.db('revisioin');
     return db.collection('first');
     // let collection = await db.collection('first');
     // let response = collection.find().toArray();
