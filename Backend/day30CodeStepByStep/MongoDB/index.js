@@ -1,5 +1,5 @@
 const connectDB = require('./mongnoDB');
-// const {MongoClient} = require('mongodb');   // we need to install it form npm
+// const {MongoClient} = require('mongodb');   // we need to install it from npm
 // const url = 'mongodb://localhost:27017';
 // const client = new MongoClient(url);
 
@@ -52,7 +52,7 @@ const connectDB = require('./mongnoDB');
 
 
 //// This is Promise method.
-// connectDB().then((response) => { // this is separate function because ol geting and posting method from database connection.
+// connectDB().then((response) => { // this is separate function because of geting and posting method from database connection.
 //     response.find().toArray().then((data) => {
 //         console.log(data);
 //     })
