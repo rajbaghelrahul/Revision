@@ -1,4 +1,4 @@
-const {MongoClient} = require('mongodb');
+const {MongoClient} = require('mongodb'); // this mongodb driver is the way where we can join nodeJS with mongodb for performing crud operations.
 
 const connectDB = async () => {
     let result = await MongoClient.connect('mongodb://localhost:27017');
