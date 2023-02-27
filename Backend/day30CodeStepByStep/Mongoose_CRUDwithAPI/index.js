@@ -5,7 +5,7 @@ const Products = require('./products')
 const app = express();
 app.use(express.json());
 
-app.get('/', async (req, res) => {
+app.get('/list', async (req, res) => {
     let result = await Products.find();
     // let result = await ProductModel.find({name: "Shiva"}); // this for particular Products whose name starting with "Shiva" in DB if we use id instead of it then it will shows single product.
     console.log(result);
@@ -25,8 +25,9 @@ app.delete('/:id', async (req, res) => {
     res.send(result);
 });
 
-app.patch('/', async(req, res) => {
-    let result = await Products.updateOne({name: "Shiva"}, {
+app.patch('/:_id', async(req, res) => {
+    console.log(req.params);
+    let result = await Products.updateOne({_id: req.params}, {
         $set: req.body
     });
     console.log(result);
