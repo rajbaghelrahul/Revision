@@ -33,4 +33,13 @@ const updateInDB = async () => {
   })
   console.log(data);
 }
-updateInDB();
+// updateInDB();
+
+const deleteInDB = async () => {
+  const ProductModel = mongoose.model("first", ProdcutSchema);
+
+  let data = await ProductModel.deleteOne({_id: "63fc61b416bb5eca567ca142"}); // if we use name instead of id it will delete olny first one of them.
+  console.log(data);
+}
+
+// deleteInDB();
