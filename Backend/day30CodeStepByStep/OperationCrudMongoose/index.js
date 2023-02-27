@@ -10,7 +10,7 @@ const ProdcutSchema = new mongoose.Schema({
 
 const addInDB = async () => {
 
-  const ProductModel = mongoose.model("first", ProdcutSchema);
+  const ProductModel = mongoose.model("firsts", ProdcutSchema); // if we use "first" collection which is create by mongoDB not mongoose. so it will also create add and delete in "firsts" because it is created by mongoose.
 
   let data = new ProductModel({
     name: "Shiva",
@@ -24,10 +24,11 @@ const addInDB = async () => {
 // addInDB(); 
 
 const updateInDB = async () => {
-  const ProductModel = mongoose.model("first", ProdcutSchema);
+  const ProductModel = mongoose.model("firsts", ProdcutSchema); // if we use "first" collection which is create by mongoDB not mongoose. so it will also create add and delete in "firsts" because it is created by mongoose.
 
   let data = await ProductModel.updateOne({ name: "Shiva" }, { // it will udpate only first one of them whose are same.
     $set: { 
+      name: "Shiva K",
       age: 25,
     }
   })
@@ -36,7 +37,7 @@ const updateInDB = async () => {
 // updateInDB();
 
 const deleteInDB = async () => {
-  const ProductModel = mongoose.model("first", ProdcutSchema);
+  const ProductModel = mongoose.model("first", ProdcutSchema); // if we use "first" collection which is create by mongoDB not mongoose. so it will also create add and delete in "firsts" because it is created by mongoose.
 
   let data = await ProductModel.deleteOne({_id: "63fc61b416bb5eca567ca142"}); // if we use name instead of id it will delete olny first one of them.
   console.log(data);
@@ -45,7 +46,7 @@ const deleteInDB = async () => {
 // deleteInDB();
 
 const findInDB = async () => {
-  const ProductModel = mongoose.model("first", ProdcutSchema);
+  const ProductModel = mongoose.model("first", ProdcutSchema); // if we use "first" collection which is create by mongoDB not mongoose. so it will also create add and delete in "firsts" because it is created by mongoose.
 
   // let data = await ProductModel.find(); // this for all Products in DB.
   let data = await ProductModel.find({name: "Shiva"}); // this for particular Products whose name starting with "Shiva" in DB if we use id instead of it then it will shows single product.
