@@ -8,7 +8,7 @@ const ProdcutSchema = new mongoose.Schema({
   Occupation: String,
 });
 
-const addSchema = async () => {
+const addInDB = async () => {
 
   const ProductModel = mongoose.model("first", ProdcutSchema);
 
@@ -21,4 +21,16 @@ const addSchema = async () => {
   let result = await data.save(); // for save data in mongoDB
   console.log(result);
 };
-// addSchema();
+// addInDB(); 
+
+const updateInDB = async () => {
+  const ProductModel = mongoose.model("first", ProdcutSchema);
+
+  let data = await ProductModel.updateOne({ name: "Shiva" }, { // it will udpate only first one of them whose are same.
+    $set: { 
+      age: 25,
+    }
+  })
+  console.log(data);
+}
+updateInDB();
