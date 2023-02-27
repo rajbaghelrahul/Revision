@@ -43,3 +43,13 @@ const deleteInDB = async () => {
 }
 
 // deleteInDB();
+
+const findInDB = async () => {
+  const ProductModel = mongoose.model("first", ProdcutSchema);
+
+  // let data = await ProductModel.find(); // this for all Products in DB.
+  let data = await ProductModel.find({name: "Shiva"}); // this for particular Products whose name starting with "Shiva" in DB if we use id instead of it then it will shows single product.
+  console.log(data);
+}
+
+// findInDB();
