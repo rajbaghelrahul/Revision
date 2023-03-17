@@ -1,10 +1,11 @@
 import './App.css';
-import { CuratorCreateques } from './Components/CuratorCreateques';
+import ClassComp from './Components/ClassComp';
 
 function App() {
   return (
     <div className="App">
       <CuratorCreateques />
+      {/* <ClassComp/> */}
     </div>
   );
 }
