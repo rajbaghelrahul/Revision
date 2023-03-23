@@ -1,6 +1,6 @@
 const express = require('express');
 require('./config');
-const Products = require('./products')
+const Products = require('./products');
 
 const app = express();
 app.use(express.json());
