@@ -10,8 +10,8 @@
 
 
 // function test(arg1, arg2) {
-//     // console.log(arg1, arg2);
-//     console.log(arguments);
+//     console.log(arg1, arg2); // It shows only values.
+//     console.log(arguments); // It shows key value pair in a object.
 // }
 // test(1,2);
 
