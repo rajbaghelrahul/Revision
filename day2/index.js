@@ -1,7 +1,9 @@
 // let num = true || false;
 // let num2 = true && false;
-// console.log("Hello world!", num);
-// console.log("Hello world!", num2);
+// let num3 = 1 && 1 || 0 || 1 && 1;
+// console.log("Hello world! num", num);
+// console.log("Hello world! num2", num2);
+// console.log("Hello world! num3", num3);
 
 
 
