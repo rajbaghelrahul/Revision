@@ -47,17 +47,31 @@
 
 
 
-var arr = new Array(5); // upto index 4
-// arr[4] = 34;
-arr.push(74); // this will be added in last created 5 index
-console.log(arr[4], arr.length);
-for(var i=0; i<arr.length; i++) {
-    console.log(arr[i], i);
-}
+// var arr = new Array(5); // upto index 4
+// // arr[4] = 34;
+// arr.push(74); // this will be added in last created 5 index
+// console.log(arr[4], arr.length);
+// for(var i=0; i<arr.length; i++) {
+//     console.log(arr[i], i);
+// }
 
 
 
 
+
+
+// How to Detect an Array in JS?
+
+console.log(typeof {}); // object
+console.log(typeof []); // object
+
+
+// method 1
+console.log(Array.isArray([])); // true
+
+
+// method 2
+console.log([] instanceof Array); // true
 
 
 
