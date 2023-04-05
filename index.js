@@ -80,8 +80,6 @@
 // console.log(name) // print 'school'
 // var x = 'masai'
 
-
-
 // var name = 'Ajay'
 
 // function detail() {
@@ -96,19 +94,12 @@
 
 // person.print();
 
-
-
-
 // console.log(name);
 // var name = "Raj Baghel";
-
-
-
 
 // (function () {
 //   console.log("Hello!");
 // })();
-
 
 // const sum = (x, y) => {
 //     x = x || 5
@@ -118,9 +109,6 @@
 
 // console.log(sum(0, 10)); // 15
 
-
-
-
 // why its happen ??
 // const arr = [2, 3, 4, 5];
 
@@ -129,7 +117,6 @@
 //         console.log("Index: "+ i + ", element "+ arr[i]);
 //     }, 3000);
 // }
-
 
 // // const sum = (x, y) => x + y;
 // function sum(x, y) { // it need to return then both are function are same.
@@ -152,14 +139,9 @@
 // console.log(name);
 // name = 'masai';
 
-
 // name = "masai";
 // var name;
 // console.log(name);
-
-
-
-
 
 // printName("Shoneil");
 
@@ -172,8 +154,6 @@
 // printName = function(name) {
 //     console.log("hey", name);
 // }
-
-
 
 // console.log(name);
 // var name = 'masai';
@@ -188,13 +168,8 @@
 // console.log(name);
 // var x = "Masai"
 
-
-
 // function alpha(a=100) {console.log(a)};
 // alpha(undefined); // or empty it gives default in 100 otherwise passed value.
-
-
-
 
 // first print 'Nrupul' then shows type error.
 // 'use strict'
@@ -214,9 +189,6 @@
 //     setTimeout(greet(), 0)
 // }
 
-
-
-
 // print 3 30 150
 
 // function cont(x) {
@@ -229,7 +201,6 @@
 
 // cont(3);
 
-
 // function getName() {
 //     name = 'albert'
 // }
@@ -237,31 +208,26 @@
 // getName()
 // console.log(name); // print 'albert'
 
-
 export default class Class extends Component {
-    constructor(props) {
-        super(props) 
-        this.state={
-            fname: 'Masai',
-            lname: 'School'
-        }
-        console.log(this.state.fname, this.state.lname)
-    }
-    componentDidUpdate() {
-        console.log('First name is:', this.state.fname)
-    }
-    componentWillUnmount() {
-        console.log("Last name is:", this.state.lname)
-    }
-    componentDidMount() {
-        console.log("Welcome to Masai")
-    }
-    render() {
-        console.log("Full name is", `${this.state.fname} ${this.state.lname}`)
-        return (
-            <div>
-                WELCOME
-            </div>
-        )
-    }
+  constructor(props) {
+    super(props);
+    this.state = {
+      fname: "Masai",
+      lname: "School",
+    };
+    console.log(this.state.fname, this.state.lname);
+  }
+  componentDidUpdate() {
+    console.log("First name is:", this.state.fname);
+  }
+  componentWillUnmount() {
+    console.log("Last name is:", this.state.lname);
+  }
+  componentDidMount() {
+    console.log("Welcome to Masai");
+  }
+  render() {
+    console.log("Full name is", `${this.state.fname} ${this.state.lname}`);
+    return <div>WELCOME</div>;
+  }
 }
