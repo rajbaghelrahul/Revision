@@ -60,28 +60,56 @@
 
 
 
-// How to Detect an Array in JS?
+// // How to Detect an Array in JS?
 
-console.log(typeof {}); // object
-console.log(typeof []); // object
-
-
-// method 1
-console.log(Array.isArray([])); // true
+// console.log(typeof {}); // object
+// console.log(typeof []); // object
 
 
-// method 2
-console.log([] instanceof Array); // true
+// // method 1
+// console.log(Array.isArray([])); // true
 
 
+// // method 2
+// console.log([] instanceof Array); // true
 
 
 
 
+// let myName = "Vinod Thapa";
+// let channelName = myName;
+
+// myName = "Thapa Technical";
+
+// console.log(channelName); // Vinod Thapa
+
+
+// const obj1 = {
+//     id: 1,
+//     name: "vinod",
+// };
+
+// const obj2 = obj1;
+// obj2.name = "Thapa technical";
+
+// console.log(obj1);
 
 
 
+// var random = Math.floor(Math.random()* 1e3);
+// var random = Math.floor(Math.random() * (30099-29799)+29799);
+// console.log(random);
 
+
+// function ab() {
+    setInterval(function hello() {
+        var randomNum = Math.floor(Math.random() * (30099-29799)+29799);
+        // var randomNum = Math.floor(Math.random() * 10);
+        console.log(randomNum);
+    },1);
+// }
+
+// ab();
 
 
 
